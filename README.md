@@ -1,4 +1,4 @@
 # News site
 Website written in php
 
-Go to: 1ns.kz
+Go to: https://1ns.kz/
