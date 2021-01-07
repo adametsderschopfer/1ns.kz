@@ -1,0 +1,55 @@
+DirectoryIndex index.php
+RewriteEngine On
+AddDefaultCharset utf-8
+
+
+RewriteRule ^newslist(/?)+$ index.php?page=newslist [L]
+RewriteRule ^kino(/?)+$ index.php?page=kino [L]
+RewriteRule ^addnews(/?)+$ index.php?page=addnews [L]
+RewriteRule ^newslist/(.*)$ index.php?page=newslist&pages=$1 [NC]
+RewriteRule ^editnews/(.*)$ index.php?page=editnews&id=$1 [NC]
+RewriteRule ^editcat/(.*)$ index.php?page=editcat&id=$1 [NC]
+RewriteRule ^editkino/(.*)$ index.php?page=editkino&id=$1 [NC]
+RewriteRule ^newscats(/?)+$ index.php?page=newscats [L]
+RewriteRule ^addcat(/?)+$ index.php?page=addcat [L]
+
+
+RewriteRule ^addann(/?)+$ index.php?page=addann [L]
+RewriteRule ^annlist(/?)+$ index.php?page=annlist [L]
+RewriteRule ^annlist/(.*)$ index.php?page=annlist&pages=$1 [NC]
+RewriteRule ^anncats(/?)+$ index.php?page=anncats [L]
+RewriteRule ^editann/(.*)$ index.php?page=editann&id=$1 [NC]
+RewriteRule ^addanncat(/?)+$ index.php?page=addanncat [L]
+RewriteRule ^editanncat/(.*)$ index.php?page=editanncat&id=$1 [NC]
+
+RewriteRule ^comlist(/?)+$ index.php?page=comlist [L]
+RewriteRule ^comlist/(.*)$ index.php?page=comlist&pages=$1 [NC]
+RewriteRule ^addcom(/?)+$ index.php?page=addcom [L]
+RewriteRule ^editcom/(.*)$ index.php?page=editcom&id=$1 [NC]
+RewriteRule ^comcats(/?)+$ index.php?page=comcats [L]
+RewriteRule ^addcomcat(/?)+$ index.php?page=addcomcat [L]
+RewriteRule ^editcomcat/(.*)$ index.php?page=editcomcat&id=$1 [NC]
+
+
+RewriteRule ^kino/(.*)$ index.php?page=kino&pages=$1 [NC]
+RewriteRule ^editkino/(.*)$ index.php?page=editkino&id=$1 [NC]
+RewriteRule ^addkino(/?)+$ index.php?page=addkino [L]
+
+RewriteRule ^comments(/?)+$ index.php?page=comments [L]
+
+RewriteRule ^themes(/?)+$ index.php?page=themes [L]
+RewriteRule ^razds(/?)+$ index.php?page=razds [L]
+RewriteRule ^messages(/?)+$ index.php?page=messages [L]
+RewriteRule ^users(/?)+$ index.php?page=users [L]
+
+
+RewriteRule ^ads(/?)+$ index.php?page=ads [L]
+RewriteRule ^addads(/?)+$ index.php?page=addads [L]
+RewriteRule ^editads/(.*)$ index.php?page=editads&id=$1 [NC]
+
+
+
+RewriteRule ^addinfo(/?)+$ index.php?page=addinfo [L]
+RewriteRule ^infolist(/?)+$ index.php?page=infolist [L]
+
+RewriteRule ^recovery(/?)+$ index.php?page=recovery [L]
