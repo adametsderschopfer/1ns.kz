@@ -1,4 +1,4 @@
 # News site
 Website written in php
 
-Go to: [Link TO -> 1ns.kz](1ns.kz).
+Go to: <a href="1ns.kz" target="_blank">Link TO -> 1ns.kz</a>
